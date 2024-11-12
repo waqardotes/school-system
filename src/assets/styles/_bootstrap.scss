@@ -1,0 +1,13 @@
+// Bootstrap customization influenced from RG style setup.
+
+// include functions to use it into custom variables file
+@import '../../../node_modules/bootstrap/scss/functions';
+
+// include custom theme variables file.
+@import "variables";
+
+// include rest of the boostrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//Font
+@import "../font/scss/all";

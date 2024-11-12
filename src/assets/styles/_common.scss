@@ -1,0 +1,145 @@
+body {
+  overflow: hidden;
+  background-color: #ffc0c0;
+}
+
+.main_content{
+    background-color: $white;
+    padding: 25px;
+    height: calc(100vh - 54px);
+    overflow: auto;
+}
+
+.p-dropdown {
+  width: 100%;
+  line-height: 13px;
+}
+.p-dropdown-items-wrapper {
+  ul {
+    padding: 0 !important;
+  }
+}
+
+.custom-login-dialog {
+  position: absolute;
+  top: 170px;
+  left: 43%;
+  .p-dialog-header {
+    padding: 5px 5px !important;
+  }
+}
+
+.p-message {
+  .p-icon {
+    display: none;
+  }
+  .p-message-wrapper {
+    font-size: 13px;
+    padding: 0.25rem 0.75rem;
+  }
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-form {
+  padding: 15px 10px;
+  border: none;
+  .row {
+		padding: 16px 0px;
+  }
+  label {
+		padding: 0 6px;
+		font-size: small;
+  }
+	.g-2 {
+		label {
+			padding: 0;
+		}
+	}
+  input {
+    width: 100%;
+    padding: 5px 6px;
+    font-size: 15px;
+    color: $black;
+  }
+	.buttons {
+    font-size: small;
+	}
+  .copy-link-err {
+    font-size: 12px;
+    color: red;
+    display: table;
+  }
+}
+.lite-link {
+  font-size: 0.9rem;
+}
+.field-link {
+  position: absolute;
+  top: -28px;
+  right: 15px;
+  @extend .lite-link;
+}
+.profile-field-link {
+  top: -26px;
+}
+.input-highlight {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+.input-highlight-required {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.1rem #dc35457a;
+}
+input {
+  &[disabled] {
+    pointer-events: none;
+    background-color: #f4f6fb;
+  }
+  &[readonly] {
+    background-color: #f4f6fb;
+  }
+}
+
+// details lic fetchingErr msg
+.row  {
+	p.alert-danger {
+		font-size: 13px;
+	}
+}
+
+p-chips {
+	ul {
+		padding: 4px 4px;
+		font-size: 13px;
+		height: auto;
+		overflow: visible;
+		margin: 0;
+		line-height: normal;
+
+		.p-chips-token {
+			margin: 0;
+			padding: 5px;
+
+			a {
+				text-decoration: none;
+				color: #4b5563;
+			}
+		}
+
+		.p-chips-input-token {
+			padding: 0;
+			input {
+				padding: 0 3px;
+			}
+		}
+	}
+}
+
+.mls-form {
+  .p-dropdown {
+    line-height: 4px !important;
+  }
+}
