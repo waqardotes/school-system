@@ -6,6 +6,8 @@ import { UserHeaderComponent } from './components/user-header/user-header.compon
 import { UserSideNavComponent } from './components/user-side-nav/user-side-nav.component';
 import { UserRoutingModule } from './user-routing.module';
 
+import { SharedModule } from '../../shared/shared.module';
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { UserRoutingModule } from './user-routing.module';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    SharedModule,
   ]
 })
 export class UserModule { }

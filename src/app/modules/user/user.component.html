@@ -1,3 +1,18 @@
-<div class="container">
-  <p class="text-danger">text-danger</p>
+<div class="row">
+      <app-user-header [isSideMenuShow]="isSideMenuShow"></app-user-header>
+
+  <div class="col-lg-4 col-xl-2 col-sm-5 col-12 pe-0">
+    <div class="side_menu">
+      <app-user-side-nav></app-user-side-nav>
+    </div>
+  </div>
+    <div class="col-md-9 col-lg-9 col-xl-10 col-sm-8 col-12 p-0">
+      <main>
+        <div class="main_content">
+          <router-outlet />
+        </div>
+      </main>
+  </div>
 </div>
+
+<!-- <app-user-footer></app-user-footer> -->

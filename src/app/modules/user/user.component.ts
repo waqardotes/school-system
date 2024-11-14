@@ -11,5 +11,10 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
   }
+    isSideMenuShow: boolean = false;
+  
+    onSideMenuOpen(value: boolean) {
+      this.isSideMenuShow = value;
+    }
 
 }

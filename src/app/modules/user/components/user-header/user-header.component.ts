@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-header',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserHeaderComponent implements OnInit {
 
-  constructor() { }
+  @Input() isSideMenuShow: any;
 
-  ngOnInit(): void {
+  isLoginModalOpen: boolean = false;
+
+  constructor(
+    private router: Router,
+    // private authService: AuthService,
+  ) {}
+
+  ngOnInit() {
   }
 
+  openLoginModal() {
+    this.isLoginModalOpen = !this.isLoginModalOpen;
+  }
+
+  logout() {
+    // this.authService.logout();
+    this.router.navigate(['login']);
+  }
 }
